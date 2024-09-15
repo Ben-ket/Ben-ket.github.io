@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M S's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Icon.png">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <h1>Mostafa Sherif's Portfolio</h1>
+      </div>
+    </nav>
+    <section class="hero">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero-content">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Take a look at What I made so Far</p>
+        <a href="#projects" class="cta-button">View Projects</a>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section id="about" class="section-about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>16 Year old, 3 years Programming making small projects using python and doing some web design</p>
+        <p>Currently Learning C++</p>
+      </div>
+    </section>
+    <section id="projects" class="section-projects">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+          <div class="project-item" onclick="location.href='Projects/background/background.html';">
+            <img src="Projects/background/Color Randomizer Icon.png" alt="Project 1" >
+            <h3>Colour Randomizer</h3>
+            <h2>Colour Randomizer</h2>
+            <p>Gives you a random colour with hex code</p>
+          </div>
+          <div class="project-item" onclick="location.href='Projects/badTetris/index.html';">
+            <img src="Projects/badTetris/images/Bad-Tetris.png" alt="Project 2">
+            <h3>Shit Tetris</h3>
+            <h2>Shit Tetris</h2>
+            <p>My first coding project, Shitier version of Tetris</p>
+          </div>
+          <div class="project-item" onclick="location.href='Projects/balls/Balls.html';">
+            <img src="Projects/balls/Balls.png" alt="Project 1">
+            <h3>Bouncin' Balls</h3>
+            <h2>Bouncin' Balls</h2>
+            <p>Just Some Bouncin Balls (Very Loud!)</p>
+          </div>
+          <div class="project-item" onclick="location.href='Projects/rps/RPS.html';">
+            <img src="Projects/rps/rps.png" alt="Project 1">
+            <h3>Rock Paper Scissor Sim</h3>
+            <h2>Rock Paper Scissor Sim</h2>
+            <p>Play rock paper scissors against a Bot</p>
+          </div>
+          <div class="project-item" onclick="location.href='Projects/betterTetris/tetris.html';">
+            <img src="Projects/betterTetris/tetris.png" alt="Project 1" >
+            <h3>Better Tetris</h3>
+            <h2>Better Tetris</h2>
+            <p>A Much more refined version of tetris</p>
+          </div>
+          <div class="project-item" onclick="location.href='Projects/The Renamer/The Renamer 9000.exe';">
+            <img src="Projects/The Renamer/Renamer.png" alt="Project 1">
+            <h3>The Renamer (Python)</h3>
+            <h2>The Renamer (Python)</h2>
+            <p>Program that Renames files automatic, Click to Download</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="socials" class="section-socials">
+      <div class="container">
+        <div class="social-links">
+          <a href="https://github.com/Ben-ket" target="_blank" class="social-link">GitHub</a>
+          <a href="https://www.linkedin.com/in/yourusername/" target="_blank" class="social-link">LinkedIn</a>
+          <a href="https://www.youtube.com/@benketplayz6587" target="_blank" class="social-link">YouTube</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Shitty Portfolio inc.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
