@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prevent Arrow Keys Scroll</title>
+</head>
+<body>
+    <p>Press the arrow keys to move the rectangle without scrolling the webpage.</p>
+    <canvas id="myCanvas" width="200" height="200" style="border:1px solid black;"></canvas>
+
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+        var x = 100;
+        var y = 100;
+
+        function drawRect() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = 'red';
+            ctx.fillRect(x, y, 50, 50);
+        }
+
+        function moveRect(event) {
+            switch (event.keyCode) {
+                case 37: // Left arrow key
+                    x -= 10;
+                    break;
+                case 38: // Up arrow key
+                    y -= 10;
+                    break;
+                case 39: // Right arrow key
+                    x += 10;
+                    break;
+                case 40: // Down arrow key
+                    y += 10;
+                    break;
+            }
+            drawRect();
+            event.preventDefault(); // Prevent default scrolling behavior
+            
+        }
+
+        document.addEventListener('keydown', moveRect);
+        drawRect(); // Initial draw
+    </script>
+</body>
+</html>
